@@ -8,20 +8,23 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Nav from "./nav"
-
 import "./styles/layout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
       <div>
-        <Nav siteTitle="david🥧.design" />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()} David Aaron Pierce
           <br />
-          Site generated using
+          Site built with{" "}
+          <div className="emoji">
+            <span role="img" aria-label="coffee">
+              ☕
+            </span>
+          </div>{" "}
+          and
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

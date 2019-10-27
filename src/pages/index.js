@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Intro from "../components/intro"
+// import Projects from "../components/projects"
+// import Blog from "../components/blog"
 
 const IndexPage = () => (
   <Layout>
@@ -12,7 +14,6 @@ const IndexPage = () => (
     <Intro />
     {/* TODO: Projects go here */}
     {/* TODO: Blog goes here */}
-    <Link to="/about/">About</Link>
   </Layout>
 )
 

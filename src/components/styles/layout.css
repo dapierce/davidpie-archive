@@ -60,7 +60,8 @@ h4 {
 footer {
   background: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
   color: white;
-  min-height: 25vh;
+  text-align: center;
+  padding: 2rem;
 }
 
 strong {
@@ -73,6 +74,28 @@ em {
 
 p {
   line-height: 1.4em;
+}
+
+.emoji {
+  display: inline-block;
+  animation: grow-shrink 1s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+.emoji:hover {
+  animation-play-state: running;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media only screen and (min-width: 900px) {

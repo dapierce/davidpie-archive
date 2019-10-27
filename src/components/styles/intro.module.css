@@ -13,7 +13,7 @@
   grid-template-columns: repeat(2, 50%);
   max-width: 1000px;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .title {
@@ -23,7 +23,7 @@
   color: transparent;
   font-size: 3.6em;
   text-align: center;
-  margin-top: 10vh;
+  padding-top: 10vh;
   padding-left: 0;
   padding-right: 0;
   transition: all 0.4s ease-in-out;
@@ -38,8 +38,8 @@
 
 .wave {
   display: inline-block;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   animation: wave-hand 1s infinite ease-in-out;
   animation-play-state: paused;
 }
@@ -69,7 +69,7 @@
 
 .face {
   align-self: center;
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   overflow: hidden;
   border-radius: 50%;
@@ -110,6 +110,10 @@
   .container {
     font-size: 80%;
   }
+  .wave {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -122,6 +126,9 @@
   .face {
     max-width: 250px;
   }
+  .location {
+    position: relative;
+  }
 }
 
 @media only screen and (max-height: 420px) {
@@ -130,7 +137,7 @@
     height: 100%;
   }
   .title {
-    margin-top: 14vh;
+    padding-top: 14vh;
   }
   .location {
     position: relative;

@@ -6,7 +6,7 @@ import FaceImg from "./image"
 
 import styles from "./styles/intro.module.css"
 
-const Intro = ({ siteTitle }) => (
+const Intro = () => (
   <div className={styles.container}>
     <div className={styles.frame}>
       <h1 className={styles.title}>David Aaron Pierce</h1>
@@ -15,7 +15,7 @@ const Intro = ({ siteTitle }) => (
       <div className={styles.face}>
         <FaceImg />
       </div>
-      <div>
+      <div className={styles.blurb}>
         <h2 className={styles.hi}>
           <div className={styles.wave}>
             <span role="img" aria-label="waving hand">

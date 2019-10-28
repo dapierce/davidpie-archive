@@ -8,6 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Links from "./links"
+
 import "./styles/layout.css"
 
 const Layout = ({ children }) => {
@@ -16,17 +18,20 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()} David Aaron Pierce
-          <br />
-          Site built with{" "}
-          <div className="emoji">
-            <span role="img" aria-label="coffee">
-              ☕
-            </span>
-          </div>{" "}
-          and
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Links />
+          <p>
+            © {new Date().getFullYear()} David Aaron Pierce
+            <br />
+            Site built with{" "}
+            <div className="emoji">
+              <span role="img" aria-label="coffee">
+                ☕
+              </span>
+            </div>{" "}
+            and
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
         </footer>
       </div>
     </>

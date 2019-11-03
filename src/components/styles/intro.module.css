@@ -23,7 +23,7 @@
   color: transparent;
   font-size: 3.6em;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 20vh;
   padding-left: 0;
   padding-right: 0;
   transition: all 0.4s ease-in-out;
@@ -118,7 +118,7 @@
 
 @media only screen and (max-width: 500px) {
   .title {
-    margin-top: 0;
+    margin-top: 10vw;
   }
   .frame__twocolumn {
     grid-template-columns: 100%;
@@ -131,7 +131,7 @@
   }
 }
 
-@media only screen and (max-height: 600px) and (min-width: 501) {
+@media only screen and (max-height: 550px) {
   .container {
     font-size: 80%;
   }

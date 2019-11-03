@@ -9,32 +9,16 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Links from "./links"
+import Footer from "./footer"
 
 import "./styles/layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <div>
-        <main>{children}</main>
-        <footer>
-          <Links />
-          <p>
-            © {new Date().getFullYear()} David Aaron Pierce
-            <br />
-            Site built with{" "}
-            <div className="emoji">
-              <span role="img" aria-label="coffee">
-                ☕
-              </span>
-            </div>{" "}
-            and
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </p>
-        </footer>
-      </div>
-    </>
+    <div>
+      <main>{children}</main>
+      <Footer />
+    </div>
   )
 }
 

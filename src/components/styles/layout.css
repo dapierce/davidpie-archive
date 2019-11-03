@@ -98,8 +98,42 @@ p {
   }
 }
 
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.links li {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+.links a,
+.links a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.links .link-label {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}
+
 @media only screen and (min-width: 900px) {
   html {
     font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .link-label {
+    display: none;
   }
 }

@@ -3,17 +3,18 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Nav from "../components/nav"
+import Profile from "../components/profile"
+import Instagram from "../components/instagram"
 
-const SecondPage = () => (
+const About = () => (
   <Layout>
-    <SEO title="David Aaron Pierce / about" />
-    <h1>Hi</h1>
-    <p>
-      I'm a Seattle web developer who is versed in both frontend and backend
-      technology.
-    </p>
-    <Link to="/">Go back to the homepage</Link>
+    <Nav />
+    <Profile />
+    <div className="frame">
+      <Instagram />
+    </div>
   </Layout>
 )
 
-export default SecondPage
+export default About

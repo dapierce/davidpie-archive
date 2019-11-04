@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Links from "./links"
 import Footer from "./footer"
 
 import "./styles/layout.css"

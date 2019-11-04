@@ -9,6 +9,7 @@ import Instagram from "../components/instagram"
 
 const About = () => (
   <Layout>
+    <SEO title="About" />
     <Nav />
     <Profile />
     <div className="frame">

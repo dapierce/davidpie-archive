@@ -33,7 +33,7 @@
   animation-play-state: paused;
 }
 
-.wave:hover {
+.hi:hover .wave {
   animation-play-state: running;
 }
 

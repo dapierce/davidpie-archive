@@ -14,7 +14,7 @@ import "./styles/layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="container">
       <main>{children}</main>
       <Footer />
     </div>

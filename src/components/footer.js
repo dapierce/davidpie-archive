@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 
 import Links from "./links"
@@ -9,7 +8,7 @@ const Footer = () => (
     <p>
       © {new Date().getFullYear()} David Aaron Pierce
       <br />
-      Site built with{" "}
+      Built with{" "}
       <div className="emoji">
         <span role="img" aria-label="coffee">
           ☕

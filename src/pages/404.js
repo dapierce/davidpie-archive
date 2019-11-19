@@ -12,7 +12,8 @@ const NotFoundPage = () => (
     <div className="frame">
       <h1>Page not found</h1>
       <p>
-        No page is at this url, please head back <Link to="/">Home</Link>.
+        There is no page is at this url, please head back{" "}
+        <Link to="/">Home</Link>.
       </p>
     </div>
   </Layout>

@@ -25,32 +25,25 @@ const Intro = () => (
         <em>accessible UI</em> and <em>beautiful interfaces</em>.
       </p>
     </div>
-    <p className={styles.location}>
-      <span role="img" aria-label="location pin">
-        📍
-      </span>
-      Seattle
-    </p>
-    {/* </div> */}
     <div className={styles.buttonList}>
       <ul>
         <li>
-          <Link className="button" to="/about">
-            About
-          </Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link className="button" to="/projects">
-            Projects
-          </Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link className="button" to="/blog">
-            Blog
-          </Link>
+          <Link to="/blog">Blog</Link>
         </li>
       </ul>
     </div>
+    <p className={styles.location}>
+      <span className={styles.pin} role="img" aria-label="location pin">
+        📍
+      </span>
+      Seattle | WA | USA
+    </p>
   </div>
 )
 

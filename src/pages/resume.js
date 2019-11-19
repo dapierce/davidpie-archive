@@ -2,11 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Nav from "../components/nav"
 import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
     <SEO title="David Aaron Pierce / resume" />
+    <Nav />
+
     <h1>David Aaron Pierce</h1>
     <h2>Education</h2>
     <h3>Seattle University</h3>

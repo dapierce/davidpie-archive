@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGitlab,
   faGithub,
-  faInstagram,
   faTwitter,
   faKeybase,
   faLinkedin,
@@ -26,9 +25,9 @@ const Links = () => (
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/da_pierce/" alt="Instagram">
-          <FontAwesomeIcon icon={faInstagram} />
-          <span className="link-label">Instagram</span>
+        <a href="https://www.linkedin.com/in/piercedavid/" alt="LinkedIn">
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span className="link-label">LinkedIn</span>
         </a>
       </li>
       <li>
@@ -41,12 +40,6 @@ const Links = () => (
         <a href="https://keybase.io/dapierce" alt="Keybase">
           <FontAwesomeIcon icon={faKeybase} />
           <span className="link-label">Keybase</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/piercedavid/" alt="LinkedIn">
-          <FontAwesomeIcon icon={faLinkedin} />
-          <span className="link-label">LinkedIn</span>
         </a>
       </li>
     </ul>

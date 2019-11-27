@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 0;
   background: var(--gradient);
-  padding: var(--frame-padding);
+  padding: 0 1rem;
   z-index: 1000;
 }
 
@@ -30,7 +30,7 @@ nav {
 .navbar li {
   list-style: none;
   margin-top: 1rem;
-  padding: 0 1rem;
+  padding: 0;
 }
 .navbar li:last-child {
   margin-bottom: 1rem;
@@ -44,5 +44,8 @@ nav {
 @media only screen and (max-width: 500px) {
   .navbar a {
     font-size: 1rem;
+  }
+  .navbar li {
+    padding: 0 2px;
   }
 }

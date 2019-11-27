@@ -1,6 +1,3 @@
-/* TODO: make this more performant once specific font weights are determined */
-@import url("https://fonts.googleapis.com/css?family=Inconsolata|Lato:400,400i,900,900i|Work+Sans:300,400,500,600,800,900&display=fallback");
-
 :root {
   /* colors */
   --text-color: #444444;

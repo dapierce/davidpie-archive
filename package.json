@@ -1,15 +1,15 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "davidpie",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My portfolio website, built from Gatsby Default Starter",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "David Pierce <david.aaron.pierce@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
-    "gatsby": "^2.17.17",
+    "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-manifest": "^2.2.29",
     "gatsby-plugin-offline": "^3.0.22",
@@ -23,6 +23,9 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "typeface-inconsolata": "0.0.72",
+    "typeface-lato": "0.0.75",
+    "typeface-work-sans": "0.0.72",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {

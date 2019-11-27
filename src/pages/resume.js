@@ -5,20 +5,21 @@ import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
 
-const SecondPage = () => (
+const Resume = () => (
   <Layout>
     <SEO title="David Aaron Pierce / resume" />
     <Nav />
-
-    <h1>David Aaron Pierce</h1>
-    <h2>Education</h2>
-    <h3>Seattle University</h3>
-    <h4>2016-2020</h4>
-    <p>Master's in Computer Science</p>
-    <h2>Skills</h2>
-    <h2>Experience</h2>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="frame">
+      <h1>David Aaron Pierce</h1>
+      <h2>Education</h2>
+      <h3>Seattle University</h3>
+      <h4>2016-2020</h4>
+      <p>Master's in Computer Science</p>
+      <h2>Skills</h2>
+      <h2>Experience</h2>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 
-export default SecondPage
+export default Resume

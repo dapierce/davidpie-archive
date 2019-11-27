@@ -7,7 +7,10 @@ import styles from "./styles/intro.module.css"
 const Intro = () => (
   <div className={styles.container}>
     <div className={styles.frame}>
-      <h1 className={styles.title}>David Aaron Pierce</h1>
+      <h1 className={styles.title}>
+        <span className={styles.initial}>David</span>Aaron
+        <span className={styles.initial}>Pierce</span>
+      </h1>
     </div>
     {/* <div className={styles.frame__twocolumn}>
       <div className={styles.face}></div> */}
@@ -46,13 +49,5 @@ const Intro = () => (
     </p>
   </div>
 )
-
-Intro.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Intro.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Intro

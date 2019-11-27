@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 0;
   background: var(--gradient);
-  padding: 1rem 0.5rem;
+  padding: var(--frame-padding);
   z-index: 1000;
 }
 
@@ -29,7 +29,11 @@ nav {
 }
 .navbar li {
   list-style: none;
-  padding: 0;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.navbar li:last-child {
+  margin-bottom: 1rem;
 }
 
 .navbar a {

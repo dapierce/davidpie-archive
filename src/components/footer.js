@@ -9,11 +9,11 @@ const Footer = () => (
       © {new Date().getFullYear()} David Aaron Pierce
       <br />
       Built with{" "}
-      <div className="emoji">
+      <span className="emoji">
         <span role="img" aria-label="coffee">
           ☕
         </span>
-      </div>{" "}
+      </span>{" "}
       and
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>

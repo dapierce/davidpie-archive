@@ -5,17 +5,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Nav from "../components/nav"
 
-const Projects = () => (
+const Blog = () => (
   <Layout>
-    <SEO title="David Aaron Pierce / projects" />
+    <SEO title="David Aaron Pierce / blog" />
     <Nav />
     <div className="frame">
-      <h1>Projects</h1>
-      <h2>Bruja Hair Salon</h2>
-      <h2>Twitch Time</h2>
+      <h1>Blog</h1>
+      <h2>Post title here</h2>
+      <h2>Post title no. 2</h2>
       <Link to="/">Go back to the homepage</Link>
     </div>
   </Layout>
 )
 
-export default Projects
+export default Blog

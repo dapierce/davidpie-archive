@@ -1,10 +1,28 @@
-/* TODO: find better fonts with bold built in and try Work Sans */
-@import url("https://fonts.googleapis.com/css?family=Inconsolata|Lato:400,400i,900,900i|Work+Sans:300,400,500,600,800&display=fallback");
+/* TODO: make this more performant once specific font weights are determined */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Lato:400,400i,900,900i|Work+Sans:300,400,500,600,800,900&display=fallback");
 
 :root {
+  /* colors */
   --text-color: #444444;
   --gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
+
+  /* design */
   --content-width: 1000px;
+  --frame-padding: 0 2rem;
+
+  /* typography */
+  --fonts-title: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Verdana,
+    sans-serif;
+  --fonts-body: "Lato", "Helvetica Neue", -apple-system, BlinkMacSystemFont,
+    "Apple Color Emoji", Arial, sans-serif;
+  --fonts-code: "Inconsolata", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+
+  --title-weight: 900;
+  --heading-weight: 400;
+  --body-reg-weight: 400;
+  --body-bold-weight: 900;
 }
 
 /* prettier-ignore */
@@ -31,7 +49,7 @@ time, mark, audio, video {
 
 body {
   color: var(--text-color);
-  font-family: "Lato", sans-serif;
+  font-family: var(--fonts-body);
   font-weight: 400;
 }
 
@@ -42,7 +60,7 @@ h4,
 h5,
 h6,
 nav {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--fonts-title);
   font-weight: 400;
 }
 h1 {
@@ -77,14 +95,14 @@ p {
 }
 .frame {
   max-width: var(--content-width);
-  padding: 0 1rem;
+  padding: var(--frame-padding);
   margin: 1rem auto;
 }
 .frame__twocolumn {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   max-width: var(--content-width);
-  padding: 1rem;
+  padding: var(--frame-padding);
   margin: 1rem auto;
 }
 header {
@@ -193,7 +211,7 @@ footer p {
   border-radius: 3rem;
   padding: 0.5rem 0.8rem;
   color: var(--text-color);
-  font-family: Work Sans, sans-serif;
+  font-family: var(--fonts-title);
   font-weight: 400;
   text-decoration: none;
   text-transform: lowercase;

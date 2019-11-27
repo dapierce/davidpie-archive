@@ -8,7 +8,7 @@ const Profile = () => (
   <div className="frame__twocolumn">
     <div className={styles.blurb}>
       <h1 className={styles.hi}>I'm David Aaron Pierce</h1>
-      <p>I build websites and love the JAMStack!</p>
+      <p>I build websites, write code and love the JAMStack!</p>
       <p>
         I love designing and coding interfaces that look good and incorporate
         modern accessibility standards to ensure usability for as many people as

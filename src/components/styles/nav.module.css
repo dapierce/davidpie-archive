@@ -1,8 +1,9 @@
 nav {
   position: sticky;
   top: 0;
-  background: var(--gradient);
+  background: var(--gradient-alpha);
   padding: 0 1rem;
+  backdrop-filter: blur(8px);
   z-index: 1000;
 }
 .navbar {
@@ -11,11 +12,14 @@ nav {
   max-width: var(--content-width);
   margin: 0 auto;
 }
-.title a {
+.title a,
+.navlinks a {
   /* font-weight: var(--title-weight); */
   color: white;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+.title a {
   border: 2px solid white;
   border-radius: 6px;
 }
@@ -27,8 +31,6 @@ nav {
 }
 
 .navlinks a {
-  color: white;
-  text-decoration: none;
   border-bottom: 3px solid white;
   transition: all 0.3s ease-in-out;
 }
@@ -58,5 +60,14 @@ nav {
   }
   .navbar li {
     padding: 0 2px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    padding: 0 6px;
+  }
+  .navbar {
+    grid-template-columns: 80px 1fr;
   }
 }

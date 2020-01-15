@@ -2,6 +2,11 @@
   /* colors */
   --text-color: #444444;
   --gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
+  --gradient-alpha: linear-gradient(
+    140deg,
+    rgba(95, 197, 180, 0.85) 15%,
+    rgba(51, 204, 255, 0.85)
+  );
 
   /* design */
   --content-width: 1000px;

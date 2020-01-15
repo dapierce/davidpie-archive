@@ -2,7 +2,6 @@ import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faGitlab,
   faGithub,
   faTwitter,
   faKeybase,
@@ -12,12 +11,6 @@ import {
 const Links = () => (
   <div className="links">
     <ul>
-      <li>
-        <a href="https://gitlab.com/dapierce" aria-label="GitLab">
-          <FontAwesomeIcon icon={faGitlab} />
-          <span className="link-label">GitLab</span>
-        </a>
-      </li>
       <li>
         <a href="https://github.com/dapierce" aria-label="GitHub">
           <FontAwesomeIcon icon={faGithub} />

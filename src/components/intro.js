@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+
+import Button from "../components/button"
 
 import styles from "./styles/intro.module.css"
 
@@ -21,7 +22,7 @@ const Intro = () => (
             👋
           </span>
         </div>{" "}
-        Hi!
+        Hi! I'm <strong>David</strong>.
       </h2>
       <p className={styles.description}>
         I'm a <strong>Full stack developer</strong> with a passion for{" "}
@@ -31,13 +32,13 @@ const Intro = () => (
     <div className={styles.buttonList}>
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Button to="/resume">Resume</Button>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Button to="/projects">Projects</Button>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Button to="/blog">Blog</Button>
         </li>
       </ul>
     </div>

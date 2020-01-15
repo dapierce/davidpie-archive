@@ -188,7 +188,7 @@ footer p {
 .links ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: var(--content-width);
   margin: 0 auto;
   list-style: none;
@@ -265,5 +265,6 @@ footer p {
   .gallery {
     column-gap: 0.5rem;
     row-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
   }
 }

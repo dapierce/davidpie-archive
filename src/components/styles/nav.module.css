@@ -5,17 +5,28 @@ nav {
   padding: 0 1rem;
   z-index: 1000;
 }
-
 .navbar {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 30% 1fr;
   max-width: var(--content-width);
-  text-transform: lowercase;
-  justify-content: space-between;
   margin: 0 auto;
 }
+.title a {
+  /* font-weight: var(--title-weight); */
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: lowercase;
+  justify-content: space-between;
+}
 
-.navbar a {
+.navlinks a {
   color: white;
   text-decoration: none;
   border-bottom: 3px solid white;

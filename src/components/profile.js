@@ -7,7 +7,7 @@ import styles from "./styles/intro.module.css"
 const Profile = () => (
   <div className="frame__twocolumn">
     <div className={styles.blurb}>
-      <h1 className={styles.hi}>I'm David Aaron Pierce</h1>
+      <h1 className={styles.hi}>About me</h1>
       <p>I build websites, write code and love the JAMStack!</p>
       <p>
         I love designing and coding interfaces that look good and incorporate

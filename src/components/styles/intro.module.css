@@ -2,7 +2,7 @@
   color: var(--text-color);
   font-size: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .title {
@@ -13,7 +13,7 @@
   font-size: 3.6em;
   font-weight: var(--heading-weight);
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-left: 0;
   padding-right: 0;
   transition: all 0.4s ease-in-out;
@@ -103,7 +103,6 @@
 }
 .buttonList a:hover {
   background: var(--gradient);
-
   animation: button-scale 300ms cubic-bezier(0.4, 0, 0.2, 1) 1;
   transform: scale(1.1);
   color: white;
@@ -116,12 +115,10 @@
 }
 .location {
   font-family: var(--fonts-code);
-  position: absolute;
   text-transform: lowercase;
-  right: 1rem;
-  bottom: 0;
+  margin-right: 1rem;
   text-align: right;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .pin {
   margin-right: 8px;
@@ -165,6 +162,9 @@
 @media only screen and (max-width: 640px) {
   .container {
     font-size: 80%;
+  }
+  .hi {
+    text-align: center;
   }
   .wave {
     width: 45px;

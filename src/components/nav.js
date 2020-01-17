@@ -10,7 +10,12 @@ const Nav = ({ location }) => (
     <div className={styles.navbar}>
       <ul className={styles.title}>
         <li>
-          <Link to="/">david🥧</Link>
+          <Link to="/">
+            david
+            <span role="img" aria-label="pie">
+              🥧
+            </span>
+          </Link>
         </li>
       </ul>
       <ul className={styles.navlinks}>

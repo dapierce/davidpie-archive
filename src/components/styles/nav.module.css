@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 0;
   background: var(--gradient-alpha);
-  padding: 0 1rem;
+  padding: 0 2rem;
   backdrop-filter: blur(8px);
   z-index: 1000;
 }
@@ -20,26 +20,75 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .title a {
+  display: inline-block;
+  margin: -6px -3px -6px 0;
+  padding: 3px 6px;
   border: 2px solid white;
   border-radius: 6px;
+  transform: scale(1);
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
+.title a:hover,
+.title a:focus {
+  background: white;
+  color: var(--text-color);
+  animation: button-scale 300ms cubic-bezier(0.4, 0, 0.2, 1) 1;
+  transform: scale(1.1);
+}
+.title a:active {
+  transform: scale(1);
+}
+
 .navlinks {
   display: flex;
   flex-wrap: wrap;
   text-transform: lowercase;
   justify-content: space-between;
 }
-
 .navlinks a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 0;
+  border-bottom: 3px solid white;
+  transition: background-position 200ms ease-in-out;
+  background-size: 100% 200%;
+  background-position: 0 0;
+}
+
+.navlinks a:hover {
+  color: var(--text-color);
+  padding: 3px 3px;
+  margin: 0 -3px;
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 6px),
+    rgb(255, 255, 255, 1) 50%,
+    rgb(255, 255, 255, 1) 100%
+  );
+  background-position: 0 calc(100% + 1px);
+  border-radius: 6px;
+}
+
+.navlinks a:active,
+.navlinks a:focus {
+  color: var(--text-color);
+  padding: 3px 3px;
+  margin: 0 -3px;
+  background: white;
+  background-position: 0 calc(100% + 1px);
+  border-radius: 6px;
+}
+
+/* .navlinks a {
+  padding: 3px 0;
   border-bottom: 3px solid white;
   transition: all 0.3s ease-in-out;
 }
 
-.title a:hover,
 .navbar a:hover {
   background: white;
   color: var(--text-color);
-}
+} */
 .navbar li {
   list-style: none;
   margin-top: 1rem;
@@ -51,12 +100,14 @@ nav {
 
 .navbar a {
   font-size: 1.2em;
-  padding: 3px;
 }
 
 @media only screen and (max-width: 500px) {
+  nav {
+    padding: 0 1rem;
+  }
   .navbar a {
-    font-size: 1rem;
+    font-size: 1em;
   }
   .navbar li {
     padding: 0 2px;
@@ -68,6 +119,6 @@ nav {
     padding: 0 6px;
   }
   .navbar {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 88px 1fr;
   }
 }

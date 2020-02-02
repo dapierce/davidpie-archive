@@ -12,7 +12,7 @@ const Projects = () => (
     <div className="frame">
       <h1>Projects</h1>
       <h2>Bruja Hair Salon</h2>
-      <h2>Twitch Time</h2>
+      <h2>Miniwallism</h2>
       <Link to="/">Go back to the homepage</Link>
     </div>
   </Layout>

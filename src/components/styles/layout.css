@@ -8,6 +8,10 @@
     rgba(51, 204, 255, 0.82)
   );
 
+  /* box shadows */
+  --shadow-large: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.3);
+
   /* themes */
   --theme-light-bg: #ffffff;
   --theme-light-text: #444444;
@@ -28,7 +32,8 @@
     "Liberation Mono", monospace;
 
   --title-weight: 900;
-  --heading-weight: 400;
+  --heading-weight: 300;
+  --link-weight: 400;
   --body-reg-weight: 400;
   --body-bold-weight: 900;
 }
@@ -58,7 +63,7 @@ time, mark, audio, video {
 body {
   color: var(--text-color);
   font-family: var(--fonts-body);
-  font-weight: 400;
+  font-weight: var(--body-reg-weight);
 }
 
 h1,
@@ -66,10 +71,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-nav {
+h6 {
   font-family: var(--fonts-title);
-  font-weight: 400;
+  font-weight: var(--heading-weight);
 }
 h1 {
   font-size: 2.4em;
@@ -92,8 +96,12 @@ em {
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.6rem;
   margin-bottom: 1.4rem;
+}
+nav {
+  font-family: var(--fonts-title);
+  font-weight: var(--link-weight);
 }
 .container {
   display: grid;
@@ -151,7 +159,8 @@ footer p {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.6);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   }
   100% {
     transform: scale(1);
@@ -169,13 +178,13 @@ footer p {
 }
 .gallery__image {
   width: 100%;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-small);
   transition: 150ms all cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
 }
 .gallery__image:hover,
 .gallery__image:focus {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-large);
   animation: perspective-scale 300ms cubic-bezier(0.4, 0, 0.2, 1) 1;
   z-index: 999;
   transform: scale(1.05);
@@ -239,7 +248,7 @@ footer p {
 }
 .links a:hover svg,
 .links a:focus svg {
-  animation: button-scale 300ms cubic-bezier(0.4, 0, 0.2, 1) 1;
+  animation: icon-scale 300ms cubic-bezier(0.4, 0, 0.2, 1) 1;
   transform: scale(1.1);
 }
 
@@ -251,7 +260,7 @@ footer p {
   transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes button-scale {
+@keyframes icon-scale {
   0% {
     transform: scale(1);
   }
@@ -265,7 +274,7 @@ footer p {
 
 @media only screen and (min-width: 900px) {
   html {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 

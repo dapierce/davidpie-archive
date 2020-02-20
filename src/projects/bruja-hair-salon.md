@@ -6,4 +6,4 @@ link: "https://www.brujasalon.com"
 sort: "1"
 ---
 
-Website for a Seattle salon, created using Gatsby and React. Thanks to pre-processing and image optimization it loads in milliseconds according to Lighthouse audits, even with all the hair photos on the front page.
+Website for a Seattle salon, created using Gatsby and React. Thanks to pre-processing and image optimization it scores >80s according to Lighthouse audits, even with all the hair photos on the front page.

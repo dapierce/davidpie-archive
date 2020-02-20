@@ -7,8 +7,23 @@ import styles from "./styles/intro.module.css"
 const Profile = () => (
   <div className="frame__twocolumn">
     <div className={styles.blurb}>
-      <h1 className={styles.hi}>About me</h1>
-      <p>I build websites, write code and love the JAMStack!</p>
+      <h1 className={styles.hi}>
+        <span className="emoji">
+          <span role="img" aria-hidden="true">
+            🌠
+          </span>
+        </span>
+        About me
+      </h1>
+      <p>
+        I build websites, write code and{" "}
+        <span className="emoji">
+          <span role="img" aria-label="love">
+            ❤️
+          </span>
+        </span>{" "}
+        the JAMStack!
+      </p>
       <p>
         I love designing and coding interfaces that look good and incorporate
         modern accessibility standards to ensure usability for as many people as

@@ -33,9 +33,11 @@ nav {
   color: var(--text-color);
   animation: button-scale 300ms cubic-bezier(0.4, 0, 0.2, 1) 1;
   transform: scale(1.1);
+  box-shadow: var(--shadow-large);
 }
 .title a:active {
   transform: scale(1);
+  box-shadow: var(--shadow-large);
 }
 
 .navlinks {

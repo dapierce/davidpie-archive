@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Button from "../components/button"
+import Greeting from "../components/greeting"
 
 import styles from "./styles/intro.module.css"
 
@@ -22,7 +23,7 @@ const Intro = () => (
             👋
           </span>
         </div>{" "}
-        Hi! I'm <strong>David</strong>.
+        <Greeting />
       </h2>
       <p className={styles.description}>
         I'm a <strong>Full stack developer</strong> with a passion for{" "}
